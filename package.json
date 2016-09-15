@@ -1,0 +1,25 @@
+{
+  "name": "typescript-babel-jest",
+  "version": "0.1.1",
+  "description": "TS to ES6 to ES5",
+  "main": "index.js",
+  "author": "Pavel Lozinsky <jingle@live.com> (http://github.com/lozinsky)",
+  "license": "ISC",
+  "keywords": [
+    "typescript",
+    "babel",
+    "jest",
+    "preprocesor",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lozinsky/typescript-babel-jest.git"
+  },
+  "homepage": "https://github.com/lozinsky/typescript-babel-jest#readme",
+  "dependencies": {
+    "app-root-path": "^2.0.1",
+    "babel-jest": "^15.0.0",
+    "typescript": "^2.0.2"
+  }
+}
