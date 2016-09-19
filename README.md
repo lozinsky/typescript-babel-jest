@@ -1,4 +1,7 @@
 # typescript-babel-jest
+
+[![Build Status](https://travis-ci.org/lozinsky/typescript-babel-jest.svg?branch=master)](https://travis-ci.org/lozinsky/typescript-babel-jest)
+
 Preprocessor for typescript projects, if your ```tsconfig.json``` like this:
 ```
 "compilerOptions": {
