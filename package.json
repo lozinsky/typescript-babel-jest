@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/lozinsky/typescript-babel-jest#readme",
   "scripts": {
-    "init": "sh /misc/test-init.sh",
+    "init": "sh ./misc/test-init.sh",
     "test": "jest --no-cache",
-    "clean": "sh /misc/test-rm.sh"
+    "clean": "sh ./misc/test-rm.sh"
   },
   "jest": {
     "testRegex": "/__tests__/.*\\.(js)$",
