@@ -1,5 +1,5 @@
 # typescript-babel-jest
-Preprocessor for typescript projects in which tsconfig.json:
+Preprocessor for typescript projects, if your ```tsconfig.json``` like this:
 ```
 "compilerOptions": {
     "target": "ES6",
@@ -10,15 +10,7 @@ Preprocessor for typescript projects in which tsconfig.json:
 
 ```npm i typescript-babel-jest -D```
 
-Add to package.json
-
-```
-"jest": {
-    "scriptPreprocessor": "<rootDir>/node_modules/typescript-babel-jest"
-}
-```
-
-For example:
+Modify your project's ```package.json``` so that the jest section looks something like:
 
 ```
 "scripts": {
@@ -28,7 +20,8 @@ For example:
     "scriptPreprocessor": "<rootDir>/node_modules/typescript-babel-jest",
     "moduleFileExtensions": [
         "ts",
-        "tsx"
+        "tsx",
+        "js"
     ],
     "testRegex": "/__tests__/.*\\.(ts|tsx)$"
 }

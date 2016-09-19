@@ -1,0 +1,10 @@
+sudo: required
+language: node_js
+node_js:
+  - "6"
+install:
+    - npm install
+script:
+    - npm run init
+	- npm run test
+	- npm run clean

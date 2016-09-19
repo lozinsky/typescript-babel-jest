@@ -1,0 +1,12 @@
+{
+  "name": "typescript-babel-jest-common-test",
+  "version": "0.0.1",
+  "jest": {
+    "scriptPreprocessor": "node_modules/typescript-babel-jest",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "testRegex": "/__tests__/.*\\.(ts)$"
+  }
+}

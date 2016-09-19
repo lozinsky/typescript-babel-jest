@@ -1,4 +1,10 @@
+# Other
 .DS_Store
-node_modules
-npm-debug.log
 
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules

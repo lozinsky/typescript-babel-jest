@@ -1,0 +1,12 @@
+{
+  "name": "typescript-babel-jest-react-test",
+  "version": "0.0.1",
+  "jest": {
+    "scriptPreprocessor": "node_modules/typescript-babel-jest",
+    "moduleFileExtensions": [
+      "tsx",
+      "js"
+    ],
+    "testRegex": "/__tests__/.*\\.(tsx)$"
+  }
+}
