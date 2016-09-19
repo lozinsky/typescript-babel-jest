@@ -3,8 +3,8 @@ language: node_js
 node_js:
   - "6"
 install:
+    - npm i jest-cli -g
+    - npm i typescript -g
     - npm install
 script:
-    - npm run init
-	- npm run test
-	- npm run clean
+    - npm run init && npm run test && npm run clean
