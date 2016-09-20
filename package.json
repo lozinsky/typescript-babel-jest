@@ -1,6 +1,6 @@
 {
   "name": "typescript-babel-jest",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "TS to ES6 to ES5",
   "main": "index.js",
   "author": "Pavel Lozinsky <jingle@live.com> (http://github.com/lozinsky)",
@@ -10,18 +10,30 @@
     "babel",
     "jest",
     "preprocesor",
-    "test"
+    "typescript-babel-jest",
+    "tests"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lozinsky/typescript-babel-jest.git"
+    "url": "https://github.com/lozinsky/typescript-babel-jest"
   },
-  "homepage": "https://github.com/lozinsky/typescript-babel-jest#readme",
+  "homepage": "https://github.com/lozinsky/typescript-babel-jest",
+  "engines": {
+    "node": ">=4"
+  },
+  "files": [
+    "index.js"
+  ],
   "scripts": {
-    "init": "sh ./misc/test-init.sh",
-    "jest": "jest --no-cache",
-    "test": "npm run init && npm run jest && npm run clean",
-    "clean": "sh ./misc/test-rm.sh"
+    "start": "npm run build-clean && npm run build-start",
+    "test": "npm run build-start && npm run tests-mock && npm run tests-jest && npm run tests-clean && npm run build-clean",
+    "build-start": "babel source --presets babel-preset-es2015 --out-file index.js",
+    "build-clean": "rm -rf ./index.js",
+    "tests-mock": "sh ./misc/test-init.sh",
+    "tests-jest": "jest --no-cache",
+    "tests-clean": "sh ./misc/test-rm.sh",
+    "travis": "npm run lint && npm test",
+    "lint": "eslint source/* examples/* --ext .js"
   },
   "jest": {
     "testRegex": "/__tests__/.*\\.(js)$",
@@ -37,6 +49,7 @@
   "devDependencies": {
     "@types/jest": "^0.9.31",
     "@types/react": "^0.14.35",
+    "babel-cli": "^6.14.0",
     "babel-core": "^6.14.0",
     "babel-plugin-transform-runtime": "^6.15.0",
     "babel-preset-es2015": "^6.14.0",

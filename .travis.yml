@@ -4,6 +4,7 @@ node_js:
   - "6"
 install:
     - npm i jest-cli -g
+    - npm i eslint -g
     - npm install
 script:
-    - npm test
+    - npm run travis
