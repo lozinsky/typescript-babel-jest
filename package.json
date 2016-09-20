@@ -25,15 +25,15 @@
     "index.js"
   ],
   "scripts": {
-    "start": "npm run build-clean && npm run build-start",
-    "test": "npm run build-start && npm run tests-mock && npm run tests-jest && npm run tests-clean && npm run build-clean",
-    "build-start": "babel source --presets babel-preset-es2015 --out-file index.js",
-    "build-clean": "rm -rf ./index.js",
-    "tests-mock": "sh ./misc/test-init.sh",
-    "tests-jest": "jest --no-cache",
-    "tests-clean": "sh ./misc/test-rm.sh",
+    "start": "babel source --presets babel-preset-es2015 --out-file index.js",
+    "prestart": "npm run clean",
+    "test": "jest --no-cache",
+    "pretest": "npm start && sh ./misc/test-init.sh",
+    "posttest": "npm run clean && sh ./misc/test-rm.sh",
+    "clean": "rm -f ./index.js",
     "travis": "npm run lint && npm test",
-    "lint": "eslint source/* examples/* --ext .js"
+    "lint": "eslint source/* examples/* --ext .js",
+    "prepublish": "npm start"
   },
   "jest": {
     "testRegex": "/__tests__/.*\\.(js)$",
