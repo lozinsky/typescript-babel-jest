@@ -1,6 +1,6 @@
 {
   "name": "typescript-babel-jest",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "TS to ES6 to ES5",
   "main": "index.js",
   "author": "Pavel Lozinsky <jingle@live.com> (http://github.com/lozinsky)",
