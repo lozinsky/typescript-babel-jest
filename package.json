@@ -19,7 +19,8 @@
   "homepage": "https://github.com/lozinsky/typescript-babel-jest#readme",
   "scripts": {
     "init": "sh ./misc/test-init.sh",
-    "test": "jest --no-cache",
+    "jest": "jest --no-cache",
+    "test": "npm run init && npm run jest && npm run clean",
     "clean": "sh ./misc/test-rm.sh"
   },
   "jest": {

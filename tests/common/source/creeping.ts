@@ -11,6 +11,18 @@ export default class Creeping {
 		return `meh, hello, ${this.name}`;
 	};
 
+	public showMeYourSelf() {
+		return () => {
+			const WOW = ['wow'];
+			let yo;
+			enum hi {
+				smile
+			};
+
+			yo = Array.from(WOW[hi.smile]).map(yo => `yo, ${yo}`);
+		};
+	};
+
 	private sleep(ms: number): Promise<Function> {
 		return new Promise(r => setTimeout(r, ms));
 	};
