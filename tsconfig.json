@@ -4,7 +4,6 @@
 		"module": "es6",
 		"target": "es6",
 		"jsx": "react",
-		"experimentalDecorators": true,
 		"strictNullChecks": true,
 		"sourceMap": true,
 		"allowSyntheticDefaultImports": true,
