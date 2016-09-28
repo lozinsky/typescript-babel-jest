@@ -14,6 +14,7 @@ function runJest(dir, args) {
 	}
 
 	const localPackageJson = path.resolve(dir, 'package.json');
+
 	if (!fileExists(localPackageJson)) {
 		throw new Error(`
 			Make sure you have a local package.json file at
