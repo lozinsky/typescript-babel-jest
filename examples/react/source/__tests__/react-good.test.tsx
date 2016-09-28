@@ -5,7 +5,7 @@ import ReactGood from '../react-good';
 describe('React good', () => {
 	const renderer = require('react-test-renderer');
 
-	it('Good button renders correctly', () => {
+	it('good button renders correctly', () => {
 		const compliments = {
 			CUTE: 'cute',
 			SWEET: 'sweet',

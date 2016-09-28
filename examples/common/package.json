@@ -7,6 +7,6 @@
       "ts",
       "js"
     ],
-    "testRegex": "/__tests__/.*\\.(ts)$"
+    "testRegex": "/__tests__/.*\\.test\\.ts$"
   }
 }

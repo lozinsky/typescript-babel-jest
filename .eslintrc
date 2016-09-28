@@ -18,7 +18,11 @@
 	"env": {
 		"es6": true,
 		"browser": true,
-		"node": true
+		"node": true,
+		"jasmine": true
+	},
+	"globals": {
+		"jest": true
 	},
 	"plugins": ["node"],
 	"extends": ["eslint:recommended", "plugin:node/recommended"]

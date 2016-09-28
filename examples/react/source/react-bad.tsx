@@ -17,5 +17,5 @@ export default class ReactBad extends Component<IReactBadProps, void> {
 interface IReactBadProps {
 	insults: {
 		[name: string]: string;
-	}
-}
+	};
+};

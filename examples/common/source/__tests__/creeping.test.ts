@@ -3,13 +3,13 @@ import Creeping from '../creeping';
 describe('Common creeping', () => {
 	const creeper = new Creeping('Sam');
 
-	it('Async sleep', () => {
+	it('async sleep', () => {
 		return creeper.say().then(message => {
 			expect(message).toBe('meh, hello, Sam');
 		});
 	});
 
-	it('Code', () => {
+	it('code', () => {
 		const code = creeper.showMeYourSelf().toString();
 
 		expect(code).toContain('var WOW = [\'wow\'];');

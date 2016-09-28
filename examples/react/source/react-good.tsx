@@ -17,5 +17,5 @@ export default class ReactGood extends Component<IReactGoodProps, void> {
 interface IReactGoodProps {
 	compliments: {
 		[name: string]: string;
-	}
-}
+	};
+};
