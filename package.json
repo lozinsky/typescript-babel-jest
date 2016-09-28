@@ -1,7 +1,7 @@
 {
   "name": "typescript-babel-jest",
-  "version": "0.1.5",
-  "description": "TS to ES6 to ES5",
+  "version": "0.1.6",
+  "description": "Transpile TS to ES6 to ES5",
   "main": "index.js",
   "author": "Pavel Lozinsky <jingle@live.com> (http://github.com/lozinsky)",
   "license": "MIT",
@@ -27,24 +27,18 @@
   "scripts": {
     "start": "babel source --presets babel-preset-es2015 --out-file index.js",
     "prestart": "npm run clean",
-    "test": "jest --no-cache",
+    "test": "jest --config .jestrc --no-cache",
     "pretest": "npm start && sh ./misc/test-init.sh",
-    "posttest": "npm run clean && sh ./misc/test-rm.sh",
+    "posttest": "npm run clean && sh ./misc/test-clean.sh",
     "clean": "rm -f ./index.js",
     "travis": "npm run lint && npm test",
     "lint": "eslint source/* examples/* --ext .js",
     "prepublish": "npm start"
   },
-  "jest": {
-    "testRegex": "/__tests__/.*\\.(js)$",
-    "moduleFileExtensions": [
-      "js"
-    ]
-  },
   "dependencies": {
     "app-root-path": "^2.0.1",
     "babel-jest": "^15.0.0",
-    "typescript": "^2.0.2"
+    "typescript": "^2.0.3"
   },
   "devDependencies": {
     "@types/jest": "^0.9.31",
