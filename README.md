@@ -3,10 +3,12 @@
 
 Preprocessor for typescript projects in which the ```tsconfig.json``` is similar to that:
 
-```
-"compilerOptions": {
-    "target": "ES6",
-    "module": "ES6"
+```json
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "ES6"
+    }
 }
 ```
 
