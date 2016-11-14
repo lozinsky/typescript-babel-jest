@@ -28,7 +28,9 @@ Modify your project's ```package.json``` so that the jest section looks somethin
         "test": "jest --no-cache"
     },
     "jest": {
-        "scriptPreprocessor": "<rootDir>/node_modules/typescript-babel-jest",
+        "transform": {
+            "^.+\\.(ts|tsx)$": "node_modules/typescript-babel-jest"
+        },
         "moduleFileExtensions": [
             "ts",
             "tsx",
