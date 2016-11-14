@@ -13,7 +13,9 @@ module.exports = {
 		if (isTypeScript) {
 			src = tsc.transpile(
 				src,
-				tsConfig.compilerOptions
+				tsConfig.compilerOptions,
+				path,
+				[]
 			);
 		}
 

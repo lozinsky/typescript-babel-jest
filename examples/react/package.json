@@ -2,7 +2,9 @@
   "name": "typescript-babel-jest-react-test",
   "version": "0.0.1",
   "jest": {
-    "scriptPreprocessor": "node_modules/typescript-babel-jest",
+    "transform": {
+      "^.+\\.(ts|tsx)$": "node_modules/typescript-babel-jest"
+    },
     "moduleFileExtensions": [
       "tsx",
       "js"

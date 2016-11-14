@@ -1,6 +1,6 @@
 {
 	"testRegex": "/__tests__/.*\\.test\\.js$",
-	"testPathIgnorePatterns": [
+	"transformIgnorePatterns": [
 		"/node_modules/"
 	],
 	"moduleFileExtensions": [

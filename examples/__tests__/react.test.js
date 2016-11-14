@@ -10,10 +10,9 @@ describe('React', () => {
 		const output = result.output.toString();
 
 		expect(result.status).toBe(1);
-		expect(output).toContain('1 test failed, 1 test passed (2 total in 2 test suite');
-		expect(stderr).toContain('PASS  source/__tests__/react-good.test.tsx');
-		expect(stderr).toContain('FAIL  source/__tests__/react-bad.test.tsx');
-		expect(stderr).toContain('React bad › bad button should throw an error on line 10');
+		expect(output).toContain('● React bad › bad button should throw an error on line 10');
 		expect(stderr).toContain('stupid thrown');
+		expect(stderr).toContain('PASS  source/__tests__/react-good.test.tsx');
+		expect(stderr).toContain('Test Suites: 1 failed, 1 passed, 2 total');
 	});
 });

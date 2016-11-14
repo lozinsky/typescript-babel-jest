@@ -11,8 +11,8 @@ describe('Common', () => {
 
 		expect(result.status).toBe(0);
 		expect(output).toContain('PASS  source/__tests__/creeping.test.ts');
+		expect(output).toContain('Common creeping');
 		expect(stderr).toContain('✓ async sleep');
 		expect(stderr).toContain('✓ code');
-		expect(stderr).toContain('2 tests passed (2 total in 1 test suite');
 	});
 });
