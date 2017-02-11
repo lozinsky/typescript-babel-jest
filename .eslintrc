@@ -11,7 +11,7 @@
 		"indent": [2, "tab", { "SwitchCase": 1 }],
 		"no-shadow": 0,
 		"no-console": 0,
-		"node/no-unsupported-features": [2, { "version": 6 }],
+		"node/no-unsupported-features": 0,
 		"node/no-unpublished-require": 0,
 		"node/no-deprecated-api": 0
 	},

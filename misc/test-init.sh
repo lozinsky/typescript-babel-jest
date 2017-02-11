@@ -1,3 +1,5 @@
+sh misc/test-clean.sh
+
 mkdir node_modules/typescript-babel-jest
 
 ln -s $(pwd)/index.js $(pwd)/node_modules/typescript-babel-jest/

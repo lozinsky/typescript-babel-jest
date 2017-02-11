@@ -29,7 +29,7 @@ Modify your project's ```package.json``` so that the jest section looks somethin
     },
     "jest": {
         "transform": {
-            "^.+\\.(ts|tsx)$": "node_modules/typescript-babel-jest"
+            "^.+\\.(ts|tsx)$": "typescript-babel-jest"
         },
         "moduleFileExtensions": [
             "ts",
@@ -50,10 +50,4 @@ git clone https://github.com/lozinsky/typescript-babel-jest.git
 cd typescript-babel-jest
 npm i
 npm test
-```
-
-It is assumed that jest-cli is globally installed. If not, please do so:
-
-```sh
-npm i jest-cli -g
 ```

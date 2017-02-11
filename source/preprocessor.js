@@ -1,9 +1,8 @@
-const appRoot = require('app-root-path');
+import appRoot from 'app-root-path';
+import typescript from 'typescript';
+import babelJest from 'babel-jest';
 
-const tsc = require('typescript');
-const babelJest = require('babel-jest');
-
-const tsConfig = require(appRoot + '/tsconfig.json');
+const tsConfig = require(`${appRoot.path}/tsconfig.json`);
 
 module.exports = {
 	process(src, path) {
@@ -11,7 +10,7 @@ module.exports = {
 		const isJavaScript = path.endsWith('.js') || path.endsWith('.jsx');
 
 		if (isTypeScript) {
-			src = tsc.transpile(
+			src = typescript.transpile(
 				src,
 				tsConfig.compilerOptions,
 				path,
@@ -20,7 +19,15 @@ module.exports = {
 		}
 
 		if (isJavaScript || isTypeScript) {
-			src = babelJest.process(src, isJavaScript ? path : 'file.js');
+			// babel jest hack for transpile string src
+			const fileName = isJavaScript
+				? path
+				: 'file.js';
+
+			src = babelJest.process(
+				src,
+				fileName
+			);
 		}
 
 		return src;

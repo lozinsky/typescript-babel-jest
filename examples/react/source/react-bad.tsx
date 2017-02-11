@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class ReactBad extends Component<IReactBadProps, void> {
+class ReactBad extends Component<IReactBadProps, void> {
 	public render(): JSX.Element {
 		const { insults } = this.props;
 
@@ -19,3 +19,5 @@ interface IReactBadProps {
 		[name: string]: string;
 	};
 };
+
+export default ReactBad;

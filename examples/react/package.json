@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "jest": {
     "transform": {
-      "^.+\\.(ts|tsx)$": "node_modules/typescript-babel-jest"
+      "^.+\\.(ts|tsx)$": "./node_modules/typescript-babel-jest"
     },
     "moduleFileExtensions": [
       "tsx",

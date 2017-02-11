@@ -1,4 +1,4 @@
-export default class Creeping {
+class Creeping {
 	private readonly name: string;
 
 	constructor(yourName: string) {
@@ -28,3 +28,4 @@ export default class Creeping {
 	};
 };
 
+export default Creeping;
