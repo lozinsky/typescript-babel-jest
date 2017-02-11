@@ -1,6 +1,6 @@
 {
   "name": "typescript-babel-jest",
-  "version": "0.1.8",
+  "version": "1.0.0",
   "description": "Transpile TS to ES6 to ES5",
   "main": "index.js",
   "author": "Pavel Lozinsky <jingle@live.com> (http://github.com/lozinsky)",
@@ -27,31 +27,32 @@
   "scripts": {
     "start": "babel source --presets babel-preset-es2015 --out-file index.js",
     "prestart": "npm run clean",
-    "test": "jest --config .jestrc --no-cache",
+    "test": "node node_modules/jest-cli/bin/jest --config .jestrc --no-cache",
     "pretest": "npm start && sh ./misc/test-init.sh",
     "posttest": "npm run clean && sh ./misc/test-clean.sh",
     "clean": "rm -f ./index.js",
     "travis": "npm run lint && npm test",
-    "lint": "eslint source/* examples/* --ext .js",
+    "lint": "node_modules/.bin/eslint source/* examples/* --ext .js",
     "prepublish": "npm start"
   },
   "dependencies": {
-    "app-root-path": "^2.0.1",
-    "babel-jest": "^17.0.0",
-    "typescript": "^2.1.1"
+    "app-root-path": "2.0.1",
+    "babel-jest": "18.0.0",
+    "typescript": "2.1.6"
   },
   "devDependencies": {
-    "@types/jest": "^15.1.32",
-    "@types/react": "^0.14.47",
-    "babel-cli": "^6.18.0",
-    "babel-core": "^6.18.2",
-    "babel-plugin-transform-runtime": "^6.15.0",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-preset-react": "^6.16.0",
-    "babel-preset-stage-0": "^6.16.0",
-    "eslint": "^3.10.0",
-    "eslint-plugin-node": "^3.0.3",
-    "react": "^15.3.2",
-    "react-test-renderer": "^15.3.2"
+    "@types/jest": "18.1.1",
+    "@types/react": "15.0.9",
+    "babel-cli": "6.22.2",
+    "babel-core": "6.22.1",
+    "babel-plugin-transform-runtime": "6.22.0",
+    "babel-preset-es2015": "6.22.0",
+    "babel-preset-react": "6.22.0",
+    "babel-preset-stage-0": "6.22.0",
+    "eslint": "3.15.0",
+    "eslint-plugin-node": "4.0.1",
+    "jest-cli": "18.1.0",
+    "react": "15.4.2",
+    "react-test-renderer": "15.4.2"
   }
 }
