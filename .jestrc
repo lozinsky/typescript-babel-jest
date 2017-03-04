@@ -1,5 +1,5 @@
 {
-	"testRegex": "/__tests__/.*\\.test\\.js$",
+	"testRegex": "/tests/.*\\.test\\.js$",
 	"transformIgnorePatterns": [
 		"/node_modules/"
 	],

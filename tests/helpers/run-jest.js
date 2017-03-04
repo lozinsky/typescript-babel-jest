@@ -12,7 +12,7 @@ const {fileExists} = require('./utils');
 const path = require('path');
 const spawnSync = require('child_process').spawnSync;
 
-const JEST_PATH = path.resolve(__dirname, '../../../node_modules/jest-cli/bin/jest.js');
+const JEST_PATH = path.resolve(__dirname, '../../node_modules/jest-cli/bin/jest.js');
 
 // return the result of the spawned process:
 //  [ 'status', 'signal', 'output', 'pid', 'stdout', 'stderr',

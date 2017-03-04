@@ -1,2 +1,1 @@
-examples/* linguist-vendored
-misc/* linguist-vendored
+tests/helpers/* linguist-vendored

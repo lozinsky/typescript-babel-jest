@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.org/lozinsky/typescript-babel-jest.svg?branch=master)](https://travis-ci.org/lozinsky/typescript-babel-jest) [![npm version](https://img.shields.io/npm/v/typescript-babel-jest.svg?style=flat)](https://www.npmjs.com/package/typescript-babel-jest)
+[![Build Status](https://travis-ci.org/lozinsky/typescript-babel-jest.svg?branch=master)](https://travis-ci.org/lozinsky/typescript-babel-jest)
+[![npm version](https://img.shields.io/npm/v/typescript-babel-jest.svg?style=flat)](https://www.npmjs.com/package/typescript-babel-jest)
+
 # typescript-babel-jest
 
 Preprocessor for typescript projects in which the ```tsconfig.json``` is similar to that:

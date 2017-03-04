@@ -1,9 +1,9 @@
 {
   "name": "typescript-babel-jest",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Transpile TS to ES6 to ES5",
   "main": "index.js",
-  "author": "Pavel Lozinsky <jingle@live.com> (http://github.com/lozinsky)",
+  "author": "Pavel Lozinsky <lozinsky@protonmail.com> (http://github.com/lozinsky)",
   "license": "MIT",
   "keywords": [
     "typescript",
@@ -25,11 +25,11 @@
     "index.js"
   ],
   "scripts": {
-    "start": "babel source --presets babel-preset-es2015 --out-file index.js",
+    "start": "babel source --out-file index.js --no-comments",
     "prestart": "npm run clean",
     "test": "node node_modules/jest-cli/bin/jest --config .jestrc --no-cache",
-    "pretest": "npm start && sh ./misc/test-init.sh",
-    "posttest": "npm run clean && sh ./misc/test-clean.sh",
+    "pretest": "npm start && sh ./tests/helpers/test-init.sh",
+    "posttest": "npm run clean && sh ./tests/helpers/test-clean.sh",
     "clean": "rm -f ./index.js",
     "travis": "npm run lint && npm test",
     "lint": "node_modules/.bin/eslint source/* examples/* --ext .js",
@@ -37,21 +37,24 @@
   },
   "dependencies": {
     "app-root-path": "2.0.1",
-    "babel-jest": "18.0.0",
-    "typescript": "2.1.6"
+    "babel-jest": "19.0.0",
+    "typescript": "2.2.1"
   },
   "devDependencies": {
     "@types/jest": "18.1.1",
-    "@types/react": "15.0.9",
-    "babel-cli": "6.22.2",
-    "babel-core": "6.22.1",
-    "babel-plugin-transform-runtime": "6.22.0",
+    "@types/react": "15.0.14",
+    "babel-cli": "6.23.0",
+    "babel-core": "6.23.1",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-plugin-transform-runtime": "6.23.0",
     "babel-preset-es2015": "6.22.0",
-    "babel-preset-react": "6.22.0",
+    "babel-preset-react": "6.23.0",
     "babel-preset-stage-0": "6.22.0",
     "eslint": "3.15.0",
+    "eslint-config-airbnb-base": "11.1.1",
+    "eslint-plugin-import": "2.2.0",
     "eslint-plugin-node": "4.0.1",
-    "jest-cli": "18.1.0",
+    "jest-cli": "19.0.2",
     "react": "15.4.2",
     "react-test-renderer": "15.4.2"
   }

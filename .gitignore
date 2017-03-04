@@ -1,13 +1,24 @@
-# Build
-index.js
-
-# Other
-.DS_Store
 
 # Logs
 logs
 *.log
 npm-debug.log*
 
+# Coverage directory used by tools like istanbul
+coverage
+
+# node-waf configuration
+.lock-wscript
+
 # Dependency directories
 node_modules
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Project files
+.DS_Store
+/index.js

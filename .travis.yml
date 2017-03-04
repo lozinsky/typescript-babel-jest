@@ -1,7 +1,7 @@
 sudo: required
 language: node_js
 node_js:
-  - "7.5.0"
+  - "stable"
 install:
     - npm i
 script:
