@@ -1,5 +1,7 @@
-[![Build Status](https://travis-ci.org/lozinsky/typescript-babel-jest.svg?branch=master)](https://travis-ci.org/lozinsky/typescript-babel-jest)
-[![npm version](https://img.shields.io/npm/v/typescript-babel-jest.svg?style=flat)](https://www.npmjs.com/package/typescript-babel-jest)
+[![Build Status](https://img.shields.io/travis/lozinsky/typescript-babel-jest/master.svg?style=flat-square)](https://travis-ci.org/lozinsky/typescript-babel-jest)
+[![npm version](https://img.shields.io/npm/v/typescript-babel-jest.svg?style=flat-square)](https://www.npmjs.com/package/typescript-babel-jest)
+[![Dependencies Status](https://david-dm.org/lozinsky/typescript-babel-jest/status.svg?style=flat-square)](https://david-dm.org/lozinsky/typescript-babel-jest)
+[![DevDependencies Status](https://david-dm.org/lozinsky/typescript-babel-jest/dev-status.svg?style=flat-square)](https://david-dm.org/lozinsky/typescript-babel-jest?type=dev)
 
 # typescript-babel-jest
 
@@ -45,7 +47,7 @@ Modify your project's ```package.json``` so that the jest section looks somethin
 
 Just run ```npm test```, enjoy!
 
-## Quickstart to run tests (only if you're working on this package)
+## Quick start to run tests (only if you're working on this package)
 
 ```sh
 git clone https://github.com/lozinsky/typescript-babel-jest.git
