@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 /**
  * Copyright (c) 2014, Facebook, Inc. All rights reserved.
  *
@@ -10,7 +8,7 @@
 
 const {fileExists} = require('./utils');
 const path = require('path');
-const spawnSync = require('child_process').spawnSync;
+const spawnSync = require('cross-spawn').sync;
 
 const JEST_PATH = path.resolve(__dirname, '../../node_modules/jest-cli/bin/jest.js');
 
